@@ -1,0 +1,13 @@
+name: node.js-ci-workflow
+on: [push]
+jobs:
+  check-application:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20.17.0'  
+      - run: npm install
+      - run: npm test
+      - run: node sum.js
