@@ -33,3 +33,13 @@ jobs:
         with:
           push: true
           tags: gabrielgrc/node-sum-app:latest
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          projectBaseDir: .
+          args: >
+            -Dsonar.projectKey=gabrielgrc_node-sum-app
+            -Dsonar.organization=gabrielgrc
