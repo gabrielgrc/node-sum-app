@@ -35,7 +35,7 @@ jobs:
           tags: gabrielgrc/node-sum-app:latest
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v1.10
+        uses: SonarSource/sonarcloud-github-action@v1.9.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
