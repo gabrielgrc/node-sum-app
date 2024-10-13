@@ -41,5 +41,5 @@ jobs:
         with:
           projectBaseDir: .
           args: >
-            -Dsonar.projectKey=node-sum-app 
-            -Dsonar.organization=gabrielgrc  
+            -Dsonar.projectKey=gabrielgrc_node-sum-app
+            -Dsonar.organization=gabrielgrc
