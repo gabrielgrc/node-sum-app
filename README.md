@@ -111,6 +111,6 @@ SonarCloud is used to analyze code quality and security. The scan is run automat
 
 To run the CI pipeline, make sure to configure the following secrets in your GitHub repository:
 
-DOCKERHUB_USERNAME: Your DockerHub username.
-DOCKERHUB_TOKEN: Your DockerHub access token.
-SONAR_TOKEN: Your SonarCloud access token.
+1. DOCKERHUB_USERNAME: Your DockerHub username.  
+2. DOCKERHUB_TOKEN: Your DockerHub access token.  
+3. SONAR_TOKEN: Your SonarCloud access token.
